@@ -1,0 +1,48 @@
+version: "3.0"
+
+stories:
+
+- story: Test forgot password flow
+  steps:
+  - intent: greet
+    user: |
+      hello
+  - action: utter_ask_which_issue
+  - intent: ask_help_logging_in
+    user: |
+      I can't log in to my account
+  - action: utter_ask_which_issue
+  - intent: forget_password
+    user: |
+      I forgot my password
+  - action: utter_send_link
+
+- story: Test forgot username flow
+  steps:
+  - intent: greet
+    user: |
+      hi
+  - action: utter_ask_which_issue
+  - intent: ask_help_logging_in
+    user: |
+      help me with login issue
+  - action: utter_ask_which_issue
+  - intent: forget_username
+    user: |
+      I forgot my username
+  - action: utter_send_link
+
+- story: Test other issues flow
+  steps:
+  - intent: greet
+    user: |
+      good morning
+  - action: utter_ask_which_issue
+  - intent: ask_help_logging_in
+    user: |
+      can't sign in
+  - action: utter_ask_which_issue
+  - intent: other_issues
+    user: |
+      something else is wrong
+  - action: utter_human_assistance

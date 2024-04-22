@@ -1,0 +1,28 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_help_logging_in
+  - forget_password
+  - forget_username
+  - other_issues
+
+responses:
+  utter_ask_which_issue:
+    - text: "What issue are you facing with login? Is it a forgotten password, username, or something else?"
+
+  utter_send_link:
+    - text: "A link to reset your credentials has been sent to your registered email address."
+
+  utter_human_assistance:
+    - text: "A human agent will be with you shortly."
+
+actions:
+- utter_ask_which_issue
+- utter_send_link
+- utter_human_assistance
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

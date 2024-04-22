@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+- story: User forgot password
+  steps:
+  - intent: ask_help_logging_in
+  - action: utter_ask_which_issue
+  - intent: forget_password
+  - action: utter_send_link
+
+- story: User forgot username
+  steps:
+  - intent: ask_help_logging_in
+  - action: utter_ask_which_issue
+  - intent: forget_username
+  - action: utter_send_link
+
+- story: User has other issues
+  steps:
+  - intent: ask_help_logging_in
+  - action: utter_ask_which_issue
+  - intent: other_issues
+  - action: utter_human_assistance
