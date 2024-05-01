@@ -1,8 +1,12 @@
 version: "3.1"
 
 rules:
-
-- rule: General help login path
+- rule: Greeting rule
   steps:
-  - intent: ask_help_logging_in
-  - action: utter_ask_which_issue
+  - intent: greet
+  - action: utter_greet
+
+- rule: Goodbye rule
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

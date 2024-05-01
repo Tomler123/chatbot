@@ -2,27 +2,72 @@ version: "3.1"
 
 intents:
   - greet
-  - ask_help_logging_in
-  - forget_password
-  - forget_username
-  - other_issues
+  - goodbye
+  - forgot_password
+  - affirm
+  - deny
+  - ask_find_incomes
+  - ask_find_savings
+  - ask_find_outcomes
+  - ask_find_loans
+  - find_finances
+  - find_contact_us
+  - finc_calendar
+  - find_account_page
+  - find_home_page
 
 responses:
-  utter_ask_which_issue:
-    - text: "What issue are you facing with login? Is it a forgotten password, username, or something else?"
-
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day."
+  utter_ask_resend_link:
+    - text: "Would you like to get a password reset link sent to your email?"
   utter_send_link:
-    - text: "A link to reset your credentials has been sent to your registered email address."
+    - text: "A link to reset your password has been sent to your Gmail. Please follow it to reset your password."
+  utter_cancel:
+    - text: "Okay, let me know if there is anything else I can help you with."
+    
+  utter_find_incomes:
+    - text: "In the navigation bar, find the dropdown menu called <strong>Finances</strong>, and there will be a link called <strong>Incomes</strong>."
 
-  utter_human_assistance:
-    - text: "A human agent will be with you shortly."
+  utter_find_savings:
+    - text: "In the navigation bar, find the dropdown menu called <strong>Finances</strong>, and there will be a link called <strong>Savings</strong>."
+
+  utter_find_outcomes:
+    - text: "In the navigation bar, find the dropdown menu called <strong>Finances</strong>, and there will be a link called <strong>Outcomes</strong>."
+  
+  utter_find_loans:
+    - text: "In the navigation bar, find the dropdown menu called <strong>Finances</strong>, and there will be a link called <strong>Loans</strong>."
+  
+  utter_find_finances:
+    - text: "In the navigation bar you can find <strong>View Finances</strong> link, which will redirect you to view your finances."
+
+  utter_contact_us:
+    - text: "In the navigation bar you can find <strong>Contact</strong> link, which will redirect you to the Contact Us page, or you can simply write email to the following address: walletbuddyai@gmail.com"
+  
+  utter_calendar:
+    - text: "In the navigation bar you can find <strong>Callendar</strong> link, which will redirect you to the Callendar page."
+
+  utter_account_page:
+    - text: "In the navigation bar you can find <strong>Account</strong> link, which will redirect you to the profile page."
+  
+  utter_home_page:
+    - text: "In the navigation bar you can find <strong>WalletBuddyAI</strong> link, which will redirect you to the home page."
+
 
 actions:
-- utter_ask_which_issue
-- utter_send_link
-- utter_human_assistance
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_resend_link
+  - utter_send_link
+  - utter_cancel
+  - utter_find_incomes
+  - utter_find_savings
+  - utter_find_outcomes
+  - utter_find_loans
+  - utter_find_finances
+  - utter_contact_us
+  - utter_calendar
+  - utter_account_page
+  - utter_home_page

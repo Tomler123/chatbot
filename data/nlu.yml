@@ -5,30 +5,507 @@ nlu:
   examples: |
     - hi
     - hello
-    - good morning
-    - good evening
+    - hey
+    - hi there
+    - hey, how are you?
+    - hi, how can I assist you today?
+    - hello, good to see you!
+    - hey, what's up?
+    - hiya!
+    - greetings!
+    - hi, nice to meet you
+    - hey there, how's your day?
+    - hi, how's it going?
+    - hello, how can I help?
+    - hey, how have you been?
+    - hi, what brings you here?
+    - hello, how are things?
+    - hi, how's everything?
+    - hey, long time no see!
+    - hi, howdy?
+    - hello, what's on your mind?
+    - hey, what can I do for you?
+    - hi, good to see you again
+    - hello, what's new?
+    - hey, how are you doing?
+    - hi, what's happening?
+    - hello, how's life treating you?
+    - hey, what's going on?
 
-- intent: ask_help_logging_in
+- intent: goodbye
   examples: |
-    - I can't log in to my account
-    - unable to access my account
-    - help me with login issue
-    - can't sign in
+    - bye
+    - goodbye
+    - see you later
+    - goodbye, take care!
+    - see you around
+    - bye for now
+    - until next time
+    - farewell!
+    - bye, have a great day!
+    - goodbye, it was nice talking to you
+    - see you later, alligator!
+    - bye, catch you later
+    - until we meet again
+    - farewell, friend!
+    - bye for now, take care!
+    - goodbye, stay safe!
+    - see you soon!
+    - bye, it's been a pleasure
+    - farewell, until next time
+    - goodbye, have a good one!
+    - see you later, bye!
+    - bye, take it easy!
+    - goodbye, see you tomorrow!
+    - until we meet again, goodbye!
+    - farewell, see you soon!
+    - goodbye, have a wonderful day!
+    - see you later, take care!
+    - bye for now, see you later!
 
-- intent: forget_password
+- intent: forgot_password
   examples: |
-    - I forgot my password
-    - lost my password
-    - don't remember my password
+    - I have forgotten my password
+    - I can't remember my password
+    - forgot password
+    - reset my password
+    - I need to reset my password
+    - I seem to have misplaced my password
+    - my password has slipped my mind
+    - I can't recall my password
+    - could you help me with a password reset?
+    - I'm having trouble remembering my password
+    - I've forgotten my password, can you assist?
+    - my password isn't coming to mind
+    - I've lost access to my account, need a password reset
+    - I'm locked out of my account, forgot my password
+    - can't remember my password, need to reset it
+    - I'm having trouble logging in, forgot my password
+    - I need help resetting my password
+    - my password isn't working, can we reset it?
+    - I'm unable to login, need to reset my password
+    - I've forgotten my password, can you help me reset it?
+    - I'm struggling to remember my password, need a reset
+    - my password isn't being recognized, need to reset it
+    - I've forgotten my account password
+    - I can't access my account, forgot my password
+    - my password isn't working, need to reset it
+    - I'm locked out, forgot my password
+    - I can't login, forgot my password
+    - I need to reset my password, can't remember it
+    - I'm having difficulty logging in, need to reset my password
+    - I've forgotten my login credentials, need a password reset
 
-- intent: forget_username
+- intent: affirm
   examples: |
-    - I forgot my username
-    - what's my username?
-    - can't remember my username
+    - yes
+    - sure
+    - that would be great
+    - please do
+    - go ahead
+    - absolutely
+    - yes, please proceed
+    - that sounds good
+    - sure thing
+    - go ahead, I'm ready
+    - yes, go for it
+    - please do
+    - indeed
+    - affirmative
+    - absolutely, go ahead
+    - yes, that's fine
+    - sure, please continue
+    - yes, I'm ready
+    - yes, I'm okay with that
+    - that would be great, thanks
+    - yes, please go ahead
+    - go ahead, I'm all ears
+    - yes, I'm on board
+    - of course
+    - yes, that works
+    - that's fine with me
+    - yes, I'm interested
+    - yes, I'm open to that
+    - yes, that's acceptable
+    - yes, I agree
 
-- intent: other_issues
+- intent: deny
   examples: |
-    - something else is wrong
-    - other login issues
-    - none of the above
+    - no
+    - not now
+    - maybe later
+    - no thanks
+    - no, thank you
+    - not at the moment, maybe later
+    - I'll pass for now
+    - no, I'm good
+    - not interested, thanks
+    - no, thanks for asking though
+    - no, I'm not interested right now
+    - no, I don't think so
+    - no, not at this time
+    - no, I'm okay for now
+    - no, maybe another time
+    - no, I'm not in the mood
+    - no, I'll pass on that
+    - no, I'll skip it for now
+    - no, I'm not interested, thanks anyway
+    - no, I'll take a rain check
+    - no, I'm not feeling it
+    - no, I'll decline for now
+    - no, not at the moment
+    - no, I'll pass on this one
+    - no, not right now, thanks
+    - no, I'm not up for it
+    - no, I'm not ready for that
+    - no, I'll have to decline
+
+
+- intent: ask_find_incomes
+  examples: |
+    - Hello, I cannot find the income page
+    - How to find the income page?
+    - Can't find page for incomes
+    - Hello, I cannot find the incomes page
+    - How to find the incomes page?
+    - Can't find page for incomes
+    - Where is the earnings page?
+    - I need help finding the salaries page
+    - Hello, I'm having trouble locating the incomes section.
+    - How do I access the earnings page?
+    - I'm lost, where can I find the salaries section?
+    - Where can I see my income?
+    - I'm having difficulty finding where to view my incomes.
+    - How can I navigate to the earnings page?
+    - Can you guide me to the salaries page?
+    - I'm unsure where to find the incomes section.
+    - How do I check my earnings?
+    - Where can I find information about my salaries?
+    - I'm looking for the incomes tab, where is it located?
+    - How do I access my salaries?
+    - I can't seem to find where to view my incomes.
+    - Where can I see my monthly earnings?
+    - Can you assist me in finding the incomes section?
+    - How do I locate the salaries page?
+    - I'm trying to find where I can view my incomes.
+    - How do I check my monthly earnings?
+    - Where can I find details about my salaries?
+    - I'm struggling to locate the earnings tab, can you help?
+
+- intent: ask_find_savings
+  examples: |
+    - Hello, I cannot find the savings page
+    - How to find the savings page?
+    - Can't find page for incomes
+    - Hello, I cannot find the savings page
+    - How to find the savings page?
+    - Can't find page for savings
+    - Where is the savings section?
+    - I need help finding the savings account page
+    - Hello, I'm having trouble locating the savings section.
+    - How do I access the savings page?
+    - I'm lost, where can I find the savings account section?
+    - Where can I see my savings?
+    - I'm having difficulty finding where to view my savings.
+    - How can I navigate to the savings page?
+    - Can you guide me to the savings account page?
+    - I'm unsure where to find the savings section.
+    - How do I check my savings?
+    - Where can I find information about my savings account?
+    - I'm looking for the savings tab, where is it located?
+    - How do I access my savings account?
+    - I can't seem to find where to view my savings.
+    - Where can I see my monthly savings?
+    - Can you assist me in finding the savings section?
+    - How do I locate the savings page?
+    - I'm trying to find where I can view my savings.
+    - How do I check my monthly savings?
+    - Where can I find details about my savings account?
+    - I'm struggling to locate the savings tab, can you help?
+  
+- intent: ask_find_outcomes
+  examples: |
+    - Hello, I cannot find the outcomes page
+    - How to find the outcomes page?
+    - Can't find page for outcomes
+    - Where is the expenses page?
+    - I need help finding the subscriptions page
+    - Hello, I'm having trouble locating the outcomes section.
+    - How do I access the expenses page?
+    - I'm lost, where can I find the subscriptions section?
+    - Where can I see my expenditures?
+    - I'm having difficulty finding where to view my outcomes.
+    - How can I navigate to the expenses page?
+    - Can you guide me to the subscriptions page?
+    - I'm unsure where to find the outcomes section.
+    - How do I check my expenses?
+    - Where can I find information about my subscriptions?
+    - I'm looking for the outcomes tab, where is it located?
+    - How do I access my subscriptions?
+    - I can't seem to find where to view my outcomes.
+    - Where can I see my monthly expenses?
+    - Can you assist me in finding the outcomes section?
+    - How do I locate the subscriptions page?
+    - I'm trying to find where I can view my outcomes.
+    - How do I check my monthly expenditures?
+    - Where can I find details about my subscriptions?
+    - I'm struggling to locate the expenses tab, can you help?
+
+- intent: ask_find_loans
+  examples: |
+    - Hello, I cannot find the loans page
+    - How to find the loans page?
+    - Can't find page for incomes
+    - Hello, I cannot find the loans page
+    - How to find the loans page?
+    - Can't find page for loans
+    - Where is the loan page?
+    - I need help finding the loans page
+    - Hello, I'm having trouble locating the loan section.
+    - How do I access the loan page?
+    - I'm lost, where can I find the loans section?
+    - Where can I see my loans?
+    - I'm having difficulty finding where to view my loans.
+    - How can I navigate to the loan page?
+    - Can you guide me to the loans page?
+    - I'm unsure where to find the loan section.
+    - How do I check my loans?
+    - Where can I find information about my loans?
+    - I'm looking for the loans tab, where is it located?
+    - How do I access my loans?
+    - I can't seem to find where to view my loans.
+    - Where can I see my loan details?
+    - Can you assist me in finding the loans section?
+    - How do I locate the loan page?
+    - I'm trying to find where I can view my loans.
+    - How do I check my loan status?
+    - Where can I find details about my loans?
+    - I'm struggling to locate the loan tab, can you help?
+
+
+- intent: find_finances
+  examples: |
+    - Hello, I cannot find the finances page
+    - How to find the finances page?
+    - Can't find page for finances
+    - Where can I see my finances?
+    - Hello, I'm having trouble locating the finances page.
+    - How do I access the finances page?
+    - I can't seem to find the finances section.
+    - Where can I view my financial information?
+    - I'm having difficulty finding where to check my finances.
+    - How can I navigate to the finances page?
+    - Can you guide me to the finances section?
+    - I'm unsure where to find the finances page.
+    - How do I check my financial status?
+    - Where can I find information about my finances?
+    - I'm looking for the finances tab, where is it located?
+    - How do I access my financial details?
+    - I can't find where to view my finances.
+    - Where can I see my financial data?
+    - Can you assist me in finding the finances section?
+    - How do I locate the finances page?
+    - I'm trying to find where I can view my finances.
+    - Where can I find details about my financial situation?
+    - I'm struggling to locate the finances tab, can you help?
+    - Hello, I cannot find the financial overview page
+    - How to find the financial overview page?
+    - Can't find page for financial overview
+    - Where can I see my financial overview?
+    - Hello, I'm having trouble locating the financial overview section.
+    - How do I access the financial overview page?
+    - I'm lost, where can I find the financial overview section?
+    - Where can I see my financial status?
+    - I'm having difficulty finding where to view my financial overview.
+    - How can I navigate to the financial overview page?
+    - Can you guide me to the financial overview section?
+    - I'm unsure where to find the financial overview section.
+    - How do I check my financial status?
+    - Where can I find information about my financial overview?
+    - I'm looking for the financial overview tab, where is it located?
+    - How do I access my financial overview?
+    - I can't seem to find where to view my financial overview.
+    - Where can I see my financial overview data?
+    - Can you assist me in finding the financial overview section?
+    - How do I locate the financial overview page?
+    - I'm trying to find where I can view my financial overview.
+    - Where can I find details about my financial overview?
+    - I'm struggling to locate the financial overview tab, can you help?
+
+- intent: find_contact_us
+  examples: |
+    - Hello, I cannot find the contact us page
+    - How can I contact to the client service?
+    - Where is contact us page?
+    - Hello, I'm having trouble locating the contact us page.
+    - How can I get in touch with customer service?
+    - I'm unable to find the contact us section.
+    - Where can I find the contact information?
+    - I'm having difficulty finding how to contact you.
+    - How can I reach out to your support team?
+    - Can you guide me to the contact us page?
+    - I'm unsure where to find the contact us page.
+    - How do I contact your customer service?
+    - Where can I find the contact details?
+    - I'm looking for the contact us tab, where is it located?
+    - How do I access the contact us section?
+    - I can't seem to find where to contact you.
+    - Where can I see the contact information?
+    - Can you assist me in finding the contact us section?
+    - How do I locate the contact us page?
+    - I'm trying to find where I can contact you.
+    - Where can I find details about contacting your support?
+    - I'm struggling to locate the contact us tab, can you help?
+    - Hello, I cannot find the contact information
+    - How can I contact to the customer service?
+    - Where is the contact page?
+    - I can't seem to find the contact section.
+    - Where can I find the contact details?
+    - I'm having difficulty finding where to contact you.
+    - How can I reach out to your support team?
+    - Can you guide me to the contact page?
+    - I'm unsure where to find the contact page.
+    - How do I contact your support?
+    - Where can I find the contact information?
+    - I'm looking for the contact tab, where is it located?
+    - How do I access the contact section?
+    - I can't seem to find where to contact you.
+    - Where can I see the contact details?
+    - Can you assist me in finding the contact section?
+    - How do I locate the contact page?
+    - I'm trying to find where I can contact you.
+    - Where can I find details about contacting your team?
+    - I'm struggling to locate the contact tab, can you help?
+
+- intent: find_calendar
+  examples: |
+    - Hello, I cannot find the calendar page
+    - Where is calendar page located?
+    - Hello, I'm having trouble locating the calendar page.
+    - How do I access the calendar page?
+    - I can't seem to find the calendar section.
+    - Where can I find the calendar?
+    - I'm having difficulty finding where to view the calendar.
+    - How can I navigate to the calendar page?
+    - Can you guide me to the calendar section?
+    - I'm unsure where to find the calendar page.
+    - How do I check my schedule on the calendar?
+    - Where can I find the calendar page?
+    - I'm looking for the calendar tab, where is it located?
+    - How do I access my calendar?
+    - I can't seem to find where to view my calendar.
+    - Where can I see my events on the calendar?
+    - Can you assist me in finding the calendar section?
+    - How do I locate the calendar page?
+    - I'm trying to find where I can view my calendar.
+    - Where can I find details about my events on the calendar?
+    - I'm struggling to locate the calendar tab, can you help?
+    - Hello, I cannot find the calendar overview page
+    - Where is the calendar overview page located?
+    - How do I access the calendar overview page?
+    - I'm lost, where can I find the calendar overview section?
+    - Where can I see my schedule on the calendar overview?
+    - I'm having difficulty finding where to view my calendar overview.
+    - How can I navigate to the calendar overview page?
+    - Can you guide me to the calendar overview section?
+    - I'm unsure where to find the calendar overview section.
+    - How do I check my schedule on the calendar overview?
+    - Where can I find the calendar overview page?
+    - I'm looking for the calendar overview tab, where is it located?
+    - How do I access my calendar overview?
+    - I can't seem to find where to view my calendar overview.
+    - Where can I see my events on the calendar overview?
+    - Can you assist me in finding the calendar overview section?
+    - How do I locate the calendar overview page?
+    - I'm trying to find where I can view my calendar overview.
+    - Where can I find details about my events on the calendar overview?
+    - I'm struggling to locate the calendar overview tab, can you help?
+
+- intent: find_account_page
+  examples: |
+    - Hello, I cannot find the account page
+    - Where is profile page located?
+    - Where can I find account page?
+    - Hello, I'm having trouble locating the account page.
+    - How do I access the account page?
+    - I can't seem to find the account section.
+    - Where can I find my profile page?
+    - I'm having difficulty finding where to access my account.
+    - How can I navigate to the account page?
+    - Can you guide me to the profile section?
+    - I'm unsure where to find the account page.
+    - How do I access my profile?
+    - Where can I find the account section?
+    - I'm looking for the account tab, where is it located?
+    - How do I access my account details?
+    - I can't seem to find where to view my profile.
+    - Where can I see my account information?
+    - Can you assist me in finding the account section?
+    - How do I locate the account page?
+    - I'm trying to find where I can view my account details.
+    - Where can I find details about my account?
+    - I'm struggling to locate the account tab, can you help?
+    - Hello, I cannot find the profile overview page
+    - Where is the profile overview page located?
+    - How do I access the profile overview page?
+    - I'm lost, where can I find the profile overview section?
+    - Where can I see my account overview?
+    - I'm having difficulty finding where to view my profile overview.
+    - How can I navigate to the profile overview page?
+    - Can you guide me to the profile overview section?
+    - I'm unsure where to find the profile overview section.
+    - How do I access my profile overview?
+    - Where can I find the profile overview page?
+    - I'm looking for the profile overview tab, where is it located?
+    - How do I access my profile overview details?
+    - I can't seem to find where to view my profile overview.
+    - Where can I see my account details on the profile overview?
+    - Can you assist me in finding the profile overview section?
+    - How do I locate the profile overview page?
+    - I'm trying to find where I can view my profile overview.
+    - Where can I find details about my account on the profile overview?
+    - I'm struggling to locate the profile overview tab, can you help?
+
+- intent: find_home_page
+  examples: |
+    - Hello, I cannot find the home page
+    - Where is the main page located?
+    - Hello, I'm having trouble locating the home page.
+    - How do I access the main page?
+    - I can't seem to find the homepage.
+    - Where can I find the main page?
+    - I'm having difficulty finding where to access the home page.
+    - How can I navigate to the home page?
+    - Can you guide me to the main page?
+    - I'm unsure where to find the home page.
+    - How do I access the homepage?
+    - Where can I find the home section?
+    - I'm looking for the home tab, where is it located?
+    - How do I access my homepage?
+    - I can't seem to find where to view the main page.
+    - Where can I see the homepage?
+    - Can you assist me in finding the home section?
+    - How do I locate the home page?
+    - I'm trying to find where I can access the homepage.
+    - Where can I find details about the main page?
+    - I'm struggling to locate the home tab, can you help?
+    - Hello, I cannot find the main overview page
+    - Where is the main overview page located?
+    - How do I access the main overview page?
+    - I'm lost, where can I find the main overview section?
+    - Where can I see the main overview?
+    - I'm having difficulty finding where to view the main overview.
+    - How can I navigate to the main overview page?
+    - Can you guide me to the main overview section?
+    - I'm unsure where to find the main overview section.
+    - How do I access the main overview?
+    - Where can I find the main overview page?
+    - I'm looking for the main overview tab, where is it located?
+    - How do I access my main overview details?
+    - I can't seem to find where to view the main overview.
+    - Where can I see the main details on the main overview?
+    - Can you assist me in finding the main overview section?
+    - How do I locate the main overview page?
+    - I'm trying to find where I can view the main overview.
+    - Where can I find details about the main details on the main overview?
+    - I'm struggling to locate the main overview tab, can you help?

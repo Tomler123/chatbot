@@ -1,23 +1,73 @@
 version: "3.1"
 
 stories:
-- story: User forgot password
+- story: greeting story
   steps:
-  - intent: ask_help_logging_in
-  - action: utter_ask_which_issue
-  - intent: forget_password
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye story
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User forgot password and wants reset link
+  steps:
+  - intent: forgot_password
+  - action: utter_ask_resend_link
+  - intent: affirm
   - action: utter_send_link
 
-- story: User forgot username
+- story: User forgot password but then declines reset link
   steps:
-  - intent: ask_help_logging_in
-  - action: utter_ask_which_issue
-  - intent: forget_username
-  - action: utter_send_link
+  - intent: forgot_password
+  - action: utter_ask_resend_link
+  - intent: deny
+  - action: utter_cancel
 
-- story: User has other issues
+- story: find income page story
   steps:
-  - intent: ask_help_logging_in
-  - action: utter_ask_which_issue
-  - intent: other_issues
-  - action: utter_human_assistance
+  - intent: ask_find_incomes
+  - action: utter_find_incomes
+
+- story: find savings page story
+  steps:
+  - intent: ask_find_savings
+  - action: utter_find_savings
+
+- story: find outcomes page story
+  steps:
+  - intent: ask_find_outcomes
+  - action: utter_find_outcomes
+
+- story: find loans page story
+  steps:
+  - intent: ask_find_loans
+  - action: utter_find_loans
+
+- story: find finances page story
+  steps:
+  - intent: find_finances
+  - action: utter_find_finances
+
+- story: find contact us page story
+  steps:
+  - intent: find_contact_us
+  - action: utter_contact_us
+
+- story: find calendar page story
+  steps:
+  - intent: find_calendar
+  - action: utter_calendar
+
+- story: find account page story
+  steps:
+  - intent: find_account_page
+  - action: utter_account_page
+
+- story: find home page story
+  steps:
+  - intent: find_home_page
+  - action: utter_account_page
+
+
